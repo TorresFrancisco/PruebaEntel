@@ -74,7 +74,7 @@ function updateTable() {
         <td>${dato.marcaVehiculo}</td>
         <td>${dato.modeloVehiculo}</td>
         <td>${dato.colorVehiculo}</td>
-        <td><a onclick="deleteRow(${i})"><img src="basurero.png" alt="" class="basura" ></img></a></td>
+        <td><a onclick="deleteRow(${i})"><img src="img/basurero.png" alt="" class="basura" ></img></a></td>
       </tr>
     `
     );
