@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 60px;
+}
+.basura {
+  width: 13%;
+}
+
+.col {
+  display: inline-block;
+  margin: 1rem;
+}
+
+input:hover,
+select:hover {
+  border: 1px solid #00aeff;
+}
+
+label {
+  color: black;
+  font-weight: bold;
+}
+
+.titulos h1 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.titulos p {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar {
+  background-color: #002eff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.navbar {
+  height: 5rem;
+}
+
+.logo {
+  margin-left: 25%;
+}
+
+.link_formulario {
+  width: 86px;
+  height: 22px;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 35rem;
+}
+
+.link_lformulario {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-decoration: underline;
+  margin-left: 1rem;
+}
+
+.titulos,
+.datosVendedor,
+.datosVehiculo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  margin: 1rem;
+  height: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #002eff;
+}
+
+h1 {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#Enviar {
+  margin-top: 1rem;
+  background-color: #ff3d00;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 5rem;
+  font-size: 15px;
+  float: right;
+  cursor: pointer;
+}
+
+select,
+input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 4%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px)  {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 0 2rem;
+  }
+  .link_formulario {
+    margin-left: 1rem;
+  }
+
+  .titulos {
+    margin: 1rem 0 1rem 0;
+    text-align: justify;
+  }
+
+  input {
+    width: 18.25rem;
+  }
+
+  select {
+    width: 20rem;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+#tabla_vehiculos {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tabla_vehiculos td,
+#tabla_vehiculos th {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tabla_vehiculos tr:nth-child(even) {
+  background-color: #fff;
+}
+
+#tabla_vehiculos tr:hover {
+  background-color: #fff;
+}
+
+#tabla_vehiculos th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fff;
+  color: #000000;
+}
+

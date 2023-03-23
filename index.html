@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+
+<body>
+  <div class="navbar">
+    <a class="logo" href="index.html"><img class="entel" src="entel.png" alt="entel" />
+    </a>
+    <a class="link_formulario" href="index.html">Formulario</a>
+    <a class="link_lformulario" href="lista.html">Lista formulario</a>
+  </div>
+  <div class="container">
+    <div class="titulos">
+      <h1>Nuevo Formulario</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+        quaerat quis cumque nesciunt, sequi quisquam dolore, ipsa perferendis
+        blanditiis cupiditate fugit accusantium voluptatum quia. Possimus at
+        delectus fuga quaerat unde.
+      </p>
+    </div>
+    <form autocomplete="off" id="formulario">
+      <div class="datosVendedor">
+        <h3>Datos del vendedor:</h3>
+        <div class="row vendedor ">
+
+          <div class="col">
+            <label for="nombreApellido">Nombre y apellido:</label>
+            <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Juan Herrera" minlength="20"
+              maxlength="50" required />
+          </div>
+
+          <div class="col">
+            <label for="rutVendedor">Rut Vendedor:</label>
+            <input type="text" name="rutVendedor" id="rutVendedor" placeholder="11222333-4" minlength="9" maxlength="10"
+              required />
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="datosVehiculo">
+        <h3>Datos del vehículo:</h3>
+        <div class="row">
+          <div class="col">
+            <label for="patenteVehiculo">Patente vehículo:</label>
+            <input type="text" name="patenteVehiculo" id="patenteVehiculo" placeholder="AA1234" maxlength="6"
+              required />
+          </div>
+          <div class="col">
+            <label for="marcaVehiculo">Marca vehículo:</label>
+            <select id="marcaVehiculo" name="marcaVehiculo" required>
+              <option value="0">Seleccione una marca</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="modeloVehiculo">Modelo vehículo:</label>
+            <select id="modeloVehiculo" name="modeloVehiculo" required>
+              <option value="0">Seleccione un modelo</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="colorVehiculo">Color vehículo:</label>
+            <select id="colorVehiculo" name="colorVehiculo" required>
+              <option value="0">Seleccione un color</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <button type="button" value="submit" id="Enviar" onclick="addData(); ">
+        Enviar
+      </button>
+    </form>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="cargarOpciones.js"></script>
+</body>
+
+</html>
